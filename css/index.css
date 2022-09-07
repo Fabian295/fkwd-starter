@@ -1,0 +1,49 @@
+
+
+div.box h2 {
+  color: orange;
+  opacity: 0;
+  animation: box-head2-load 1400ms ease-in 1100ms forwards;
+}
+
+@keyframes box-head2-load {
+  0% {
+    transform:  translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform:  translateZ(0);
+    opacity: 1;
+  }
+}
+
+#lat {
+  color: lime;
+  animation: box-span-load 500ms ease-in 1000ms forwards;
+}
+
+#lon {
+  color: skyblue;
+  animation: box-span-load 500ms ease-in 1200ms ;
+}
+
+@keyframes box-span-load {
+  0% {
+    transform: translateY(-60px) translateZ(-200px);
+    color: #000;
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-30px) translateZ(-100px);
+    /* color: rgb(130, 127, 127); */
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(0) translateZ(0);
+    color: lime;
+    opacity: 1;
+  }
+}

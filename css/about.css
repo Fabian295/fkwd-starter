@@ -1,0 +1,83 @@
+
+.box > .sec, .blob-header > .sec  {
+  color: orange;
+  opacity: 0;
+  margin: 1.5rem 0 1rem 1.5rem;
+  background-color: #000;
+  animation: box-head2-load 1400ms ease-in 1100ms forwards;
+}
+
+@keyframes box-head2-load {
+  0% {
+    transform:  translateZ(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform:  translateZ(0);
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  background-color: darkblue;
+  border: 2px solid aqua;
+  color: aqua;
+  cursor: pointer;
+  transition:all 300ms ease
+}
+
+.btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.files-input-div {
+  margin: 1.5rem;
+}
+
+.hide {
+  opacity: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.box.blob > header.blob-header {
+  border-bottom-color:darkgreen;
+}
+
+.box.blob:hover > header.blob-header {
+  border-bottom-color:aqua;
+}
+
+.box.blob:hover > h2 {
+  color: skyblue;
+}
+
+.box.blob h3 {
+  margin: 1.5rem;
+  color: #bada55;
+}
+
+.btn-par {
+  margin: 1.5rem;
+}
+
+#outbox {
+  border: 2px solid #bada55;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  max-width: 50rem;
+}
+
+#picBlob {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  /* max-height: 100%; */
+  /* overflow: hidden; */
+}
