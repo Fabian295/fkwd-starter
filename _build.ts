@@ -10,7 +10,7 @@ await build({
   },
   package: {
     // package.json properties
-    name: '@fabian295/fkwd-starter',
+    name: '@fabianx/fkwd-starter',
     version: Deno.args[0],
     description: 'A starter pack for beginning web projects',
     licence: 'MIT',

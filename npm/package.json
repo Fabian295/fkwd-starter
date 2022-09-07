@@ -2,7 +2,7 @@
   "module": "./esm/js/index.js",
   "main": "./script/js/index.js",
   "types": "./types/js/index.js",
-  "name": "@fabian295/fkwd-starter",
+  "name": "@fabianx/fkwd-starter",
   "version": "0.1.1",
   "description": "A starter pack for beginning web projects",
   "licence": "MIT",
