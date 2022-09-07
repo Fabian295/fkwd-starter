@@ -1,0 +1,29 @@
+{
+  "module": "./esm/js/index.js",
+  "main": "./script/js/index.js",
+  "types": "./types/js/index.js",
+  "name": "@fabian295/fkwd-starter",
+  "version": "0.1.1",
+  "description": "A starter pack for beginning web projects",
+  "licence": "MIT",
+  "exports": {
+    ".": {
+      "import": "./esm/js/index.js",
+      "require": "./script/js/index.js",
+      "types": "./types/js/index.js"
+    },
+    "./mod.js": {
+      "import": "./esm/mod.js",
+      "require": "./script/mod.js",
+      "types": "./types/mod.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "node test_runner.js"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.37",
+    "chalk": "4.1.2",
+    "@deno/shim-deno": "~0.9.0"
+  }
+}

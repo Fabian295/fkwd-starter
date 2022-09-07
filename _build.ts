@@ -3,7 +3,7 @@ import { build, emptyDir } from 'https://deno.land/x/dnt/mod.ts';
 await emptyDir('./npm');
 
 await build({
-  entreePoints: ['./mod.ts'],
+  entryPoints: ['./js/index.js', './mod.ts'],
   outDir: './npm',
   shims: {
     deno: 'dev',
@@ -11,9 +11,9 @@ await build({
   package: {
     // package.json properties
     name: '@fabian295/fkwd-starter',
-    version: 'Deno.args[0]',
-    description: 'A starter pack for beginning web project',
-    licencce: 'MOT',
+    version: Deno.args[0],
+    description: 'A starter pack for beginning web projects',
+    licence: 'MIT',
   },
 });
 
